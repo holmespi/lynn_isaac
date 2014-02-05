@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+{% load color %}
+
+
+<html>
+	<head>
+		<title>{% block title_name %}Title Goes Here{% endblock %}</title>
+	    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Londrina+Outline|Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="header">
+			<h1 id="lynn_isaac"><a  style="color: {% random_color %}" href="/blog">Lynn Isaac</a></h1>
+			<p class="bread_crumb">{% block breadcrumb %}Breadcrumb link{% endblock %}</p>
+			
+		</div><!--end .header-->
+
+		
+
+			{% block content %}
+
+			<p>Content Goes here</p>
+
+			{% endblock %}
+
+	</div><!--end .wrapper-->
+
+	</body>
+</html>

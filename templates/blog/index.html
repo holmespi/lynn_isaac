@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load color %}
+<!--TITLE-->
+{% block title_name %}
+Lynn Isaac
+{% endblock %}
+<!--END TITLE-->
+
+<!--BREADCRUMB-->
+{% block breadcrumb %}
+
+{% endblock %}
+<!--ENDBREADCRUMB-->
+
+<!--CONTENT-->
+{% block content %}
+
+			{% if posts %}
+
+
+			<div id="spacer_1"></div>
+			<ul id="story_list">
+				{% for post in posts %}
+				<li><a href="stories/{{ post.pk }}" style="color: {% random_color %}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul><!--end #story_list-->
+			{% else %}
+			<strong>There are no Stories</strong>
+			{% endif %}
+
+{% endblock %}
+<!--ENDCONTENT-->

@@ -1,0 +1,59 @@
+$light_black: #090909;
+
+
+.header {
+	position: fixed;
+	background-color: white;
+	width: 105%;
+	margin-top:-100px;
+	height: 230px;
+	#lynn_isaac {
+		font-family: Londrina Outline;
+		font-size: 120px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+p {
+	color: $light_black;
+	font-family: Arvo;
+	font-size: 20px;
+	text-align: justify;
+}
+
+h2 {
+	color: $light_black;
+	font-family: Arvo;
+	font-size: 50px;
+	text-align: center;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#spacer_1 {
+	width: 100%;
+	height: 130px;
+}
+
+#story_list {
+	text-align: center;
+	margin: 0 auto;
+	li {
+		font-family: Londrina Solid;
+		font-size: 100px;
+		list-style-type: none;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+
+
